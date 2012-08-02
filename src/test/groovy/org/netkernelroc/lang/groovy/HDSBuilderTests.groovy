@@ -1,6 +1,10 @@
 package org.netkernelroc.lang.groovy;
 
-import org.junit.Test;
+import groovy.xml.XmlUtil
+
+import org.junit.Test
+import org.netkernel.layer0.representation.impl.HDSFactory
+import org.netkernel.layer0.util.HDSUtils
 
 class HDSBuilderTests {
 
@@ -32,7 +36,8 @@ class HDSBuilderTests {
         }
       }
     }
-    
-    assert hds.getFirstValue("//space/@id")[0] == "urn:org:netkernelroc:lang:groovy"
+
+    assert hds.getFirstValue("//space/@id") == "urn:org:netkernelroc:lang:groovy"
   }
+
 }
