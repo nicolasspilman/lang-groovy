@@ -4,16 +4,32 @@
   <artifactId>lang-groovy</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
+
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
       <artifactId>groovy-all</artifactId>
       <version>1.8.7</version>
     </dependency>
+
+    <dependency>
+      <groupId>urn.com.ten60.core</groupId>
+      <artifactId>layer0</artifactId>
+      <version>[1.0.0,)</version>
+    </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.10</version>
       <scope>test</scope>
     </dependency>
+
   </dependencies>
+  <repositories>
+    <repository>
+      <id>netkernelroc</id>
+      <name>netkernelroc</name>
+      <url>http://maven.netkernelroc.org/netkernel-maven</url>
+    </repository>
+  </repositories>
 </project>
